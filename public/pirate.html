@@ -12,7 +12,6 @@
     <!-- Bulma Version 0.9.0-->
     <link rel="stylesheet" href="https://unpkg.com/bulma@0.9.0/css/bulma.min.css" />
     <link rel="stylesheet" type="text/css" href="../css/landing.css">
-    <link rel="stylesheet" href="style.css"/>
 </head>
 
 <body>
@@ -21,7 +20,7 @@
             <nav class="navbar">
                 <div class="container">
                     <div class="navbar-brand">
-                  
+                      
                         <span class="navbar-burger burger" data-target="navbarMenu">
                             <span></span>
                             <span></span>
@@ -70,41 +69,35 @@
 
             <div class="hero-body">
                 <div class="container has-text-centered">
-                    <div class="column is-9 is-offset-2">
+                    <div class="column is-6 is-offset-3">
                         <h1 class="title">
-                            Fun Translator!
+                            Pirate Speak Translator!
                         </h1>
                         <h2 class="subtitle">
-                            Select a language below to start translating! 
+                            Enter in a phrase to be translated into Pirate Speak!
                         </h2>
-                        <div class="column is-6 is-offset-4">
+                        <div class="box">
                             <div class="field is-grouped">
-                                <div class="dropdown is-hoverable">
-                                    <div class="dropdown-trigger">
-                                      <button class="button" aria-haspopup="true" aria-controls="dropdown-menu3">
-                                        <span>Select Fun Language</span>
-                                        <span class="icon is-small">
-                                          <i class="fas fa-angle-down" aria-hidden="true"></i>
-                                        </span>
-                                      </button>
-                                    </div>
-                                    <div class="dropdown-menu mr-2" id="dropdown-menu4" role="menu">
-                                      <div class="dropdown-content">
-                                        <a class="dropdown-item" href="https://fun-translator.glitch.me/yoda.html">Yoda</a>
-                                        <a class="dropdown-item" href="https://fun-translator.glitch.me/piglatin.html">Pig Latin</a>
-                                        <a class="dropdown-item" href="https://fun-translator.glitch.me/pirate.html">Pirate</a>
-                                      </div>
-                                    </div>
-                                  </div>
+                                <p class="control is-expanded">
+                                    <input id="pirate-query" class="input" type="text" placeholder="Enter text to be translated into Pirate Speak!">
+                                </p>
+                                <p class="control">
+                                  <button id="pirate-submit" class="button is-info">Submit</button>                         
+                                </p>
                             </div>
                         </div>
+                    </div>
+                    <div class="subtitle is-hidden" id="result">
+                      <p>
+                        Translated Text!
+                      </p>
                     </div>
                 </div>
             </div>
 
     </section>
     <script async type="text/javascript" src="../js/bulma.js"></script>
-    <script src="/script.js"></script>
+    <script src="/pirate.js"></script>
 </body>
 
 </html>
