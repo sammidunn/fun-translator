@@ -2,9 +2,6 @@ const pirateSubmit = document.querySelector("#pirate-submit");
 const result = document.querySelector("#result");
 const pirateQuery = document.querySelector("#pirate-query");
 
-
-
-
 pirateSubmit.addEventListener("click", () => {
   let input = encodeURIComponent(pirateQuery.value)
   const urlToFetch = `https://api.funtranslations.com/translate/pirate.json?text=${input}`
